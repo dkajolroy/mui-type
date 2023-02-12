@@ -28,6 +28,15 @@ export default function ButtonPage() {
           Click me
         </Button>
       </Box>
+      <Box>
+        <h1>Link button</h1>
+        <Button color="secondary" href="/" variant="contained">
+          Go to Home
+        </Button>
+        <Button color="secondary" href="/" disableRipple variant="contained">
+          Go to Home
+        </Button>
+      </Box>
     </Box>
   );
 }

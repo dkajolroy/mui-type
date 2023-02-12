@@ -6,6 +6,7 @@ import { Route, Routes } from "react-router";
 import { BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import ButtonPage from "./pages/ButtonPage";
+import FlexboxPage from "./pages/FlexboxPage";
 import HomePage from "./pages/HomePage";
 import TypographyPage from "./pages/TypographyPage";
 
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/typography" element={<TypographyPage />} />
         <Route path="/button" element={<ButtonPage />} />
+        <Route path="/flex" element={<FlexboxPage />} />
       </Routes>
     </BrowserRouter>
   );

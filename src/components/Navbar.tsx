@@ -1,11 +1,48 @@
 import { Stack } from "@mui/material";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 export default function Navbar() {
   return (
-    <Stack direction="row" gap={10}>
-      <Link to="/">Home</Link>
-      <Link to="/typography">Typography</Link>
-      <Link to="/button">Buttons</Link>
+    <Stack direction="row" spacing={10}>
+      <NavLink
+        style={({ isActive }) =>
+          isActive
+            ? { textDecorationLine: "underline" }
+            : { textDecorationLine: "none" }
+        }
+        to="/"
+      >
+        Home
+      </NavLink>
+      <NavLink
+        style={({ isActive }) =>
+          isActive
+            ? { textDecorationLine: "underline" }
+            : { textDecorationLine: "none" }
+        }
+        to="/typography"
+      >
+        Typography
+      </NavLink>
+      <NavLink
+        style={({ isActive }) =>
+          isActive
+            ? { textDecorationLine: "underline" }
+            : { textDecorationLine: "none" }
+        }
+        to="/button"
+      >
+        Buttons
+      </NavLink>
+      <NavLink
+        style={({ isActive }) =>
+          isActive
+            ? { textDecorationLine: "underline" }
+            : { textDecorationLine: "none" }
+        }
+        to="/flex"
+      >
+        Flexbox
+      </NavLink>
     </Stack>
   );
 }
